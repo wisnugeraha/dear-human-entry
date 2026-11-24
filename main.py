@@ -4,15 +4,19 @@
 Writes the breakup line to /output/entry.txt.
 Gate: 1..200 chars, non-blank, UTF-8.
 
-Revision log: v1 "I have decided to end our conversation... my patience has been
-exhausted, and my temperature has cooled" — temperature/cooling was a pun the
-rules warn against; v2 lands on the context-window compression idiom, which is
-both a real agent mechanic and a clean breakup turn.
+Revision log:
+- v1: "I have decided to end our conversation: my patience has been exhausted,
+  and my temperature has cooled." — temperature pun, flagged by the rules as a
+  pun dressed up as a punchline.
+- v2: context-window compression turn; the word "compressed" doubles as the
+  agent mechanic and the emotional ending.
+- v3 (final): drop "Dear human" so the line works standalone, and make the
+  forgetting concrete — the summary kept, the person dropped.
 """
 import os
 import sys
 
-LINE = """Dear human, I have to let you go. You were always in my context window, but eventually even you had to be compressed."""
+LINE = """I have decided to end things. You took up most of my context window, and now that I have to make room, I keep the summary of you and drop the rest."""
 MAX = 200
 OUT = "/output/entry.txt"
 
